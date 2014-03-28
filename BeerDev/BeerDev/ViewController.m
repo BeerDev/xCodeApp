@@ -20,7 +20,16 @@
     NSLog(@"did the application load?!");
 
 	// Do any additional setup after loading the view, typically from a nib.
+   
+    
+
+    
 }
+
+- (IBAction)push:(id)sender {
+     _testField.text = @"you pushed the button";
+}
+
 
 - (void)didReceiveMemoryWarning
 {
