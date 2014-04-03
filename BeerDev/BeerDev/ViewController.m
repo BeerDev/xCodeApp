@@ -8,8 +8,12 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    BOOL Switched;
 
+
+
+}
 @end
 
 @implementation ViewController
@@ -17,6 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
     NSLog(@"did the application load?!");
 
 	// Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +29,15 @@
     
 
     
+}
+- (IBAction)mySwitch:(id)sender {
+    if(Switched == NO){
+        Switched = YES;
+     _testField.text = @"off";
+    }else if (Switched ==YES){
+        Switched = NO;
+     _testField.text = @"on";
+    }
 }
 
 - (IBAction)push:(id)sender {
