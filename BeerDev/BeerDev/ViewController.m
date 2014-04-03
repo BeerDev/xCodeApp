@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
    
-    NSLog(@"did the application load?!");
+    NSLog(@"did the application load?! yes?");
 
 	// Do any additional setup after loading the view, typically from a nib.
    
