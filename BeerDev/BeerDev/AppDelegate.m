@@ -12,6 +12,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+
+    if([jsonData getJsonArray:@"JSON"] == 0){
+        NSLog(@"not in memory");
+        [jsonData setJSON];
+    }else{
+         NSLog(@"already in memory");
+        [jsonData setArrayWithoutJSON:[jsonData getJsonArray:@"JSON"]];
+    }
+    
+    //NSLog(@"%@",[jsonData GetArray]);
+    
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -40,6 +54,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    [jsonData setArrayForKey:[jsonData GetArray] forKey:@"JSON"];
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 

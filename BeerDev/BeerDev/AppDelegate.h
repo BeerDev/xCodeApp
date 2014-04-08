@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "jsonData.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

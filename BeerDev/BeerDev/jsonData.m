@@ -44,12 +44,9 @@ static NSMutableArray* JSONARRAY = nil;
 +(NSMutableArray*)getJsonArray:(NSString*)key
 {
     NSMutableArray* jsonData = nil;
-    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
-    NSLog(@"%@",standardUserDefaults);
-    if ([standardUserDefaults mutableArrayValueForKey:key]){
-        jsonData = [standardUserDefaults mutableArrayValueForKey:key];
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:key]){
+        jsonData = [[NSUserDefaults standardUserDefaults] mutableArrayValueForKey:key];
     }
-    NSLog(@"%@",jsonData);
     return jsonData;
 }
 
