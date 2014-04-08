@@ -32,8 +32,9 @@
       //  [_test setImage:[dataholding cacheThoseImages]];
    // bild = [UIImage imageNamed:@"test.png"];
 	// Do any additional setup after loading the view, typically from a nib.
-   
-    
+   //Test/Emma
+    //test jesper
+    // Lina!
 
     
 }
