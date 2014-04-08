@@ -21,7 +21,7 @@ static NSMutableArray* JSONARRAY = nil;
     return self;
 }
 
-+(void)setJSON{
++(void)SetJSON{
     NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://beerdev.tk/json_products.php"]];
     JSONARRAY = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
 }
@@ -30,7 +30,7 @@ static NSMutableArray* JSONARRAY = nil;
     return JSONARRAY;
 }
 
-+(void)setArrayForKey:(NSMutableArray*)jsonData forKey:(NSString*)key
++(void)SetArrayForKey:(NSMutableArray*)jsonData forKey:(NSString*)key
 {
 	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
 	if (standardUserDefaults)
@@ -41,7 +41,7 @@ static NSMutableArray* JSONARRAY = nil;
 
 }
 
-+(NSMutableArray*)getJsonArray:(NSString*)key
++(NSMutableArray*)GetJsonArray:(NSString*)key
 {
     NSMutableArray* jsonData = nil;
     if ([[NSUserDefaults standardUserDefaults] objectForKey:key]){
@@ -50,8 +50,13 @@ static NSMutableArray* JSONARRAY = nil;
     return jsonData;
 }
 
-+(void)setArrayWithoutJSON:(NSMutableArray*)array{
++(void)SetArrayWithoutInternet:(NSMutableArray*)array{
     JSONARRAY = array;
+}
+
++(void)CacheThoseImages{
+
+
 }
 
 @end

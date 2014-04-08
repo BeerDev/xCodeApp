@@ -22,6 +22,8 @@
         [jsonData setArrayWithoutJSON:[jsonData getJsonArray:@"JSON"]];
     }
     
+ 
+    
     //NSLog(@"%@",[jsonData GetArray]);
     
     
@@ -38,6 +40,8 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    NSLog(@"entering background");
+     [jsonData setArrayForKey:[jsonData GetArray] forKey:@"JSON"];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
@@ -54,7 +58,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    [jsonData setArrayForKey:[jsonData GetArray] forKey:@"JSON"];
+   
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 

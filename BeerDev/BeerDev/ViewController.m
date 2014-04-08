@@ -20,9 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-
+    NSArray * testArray = [jsonData GetArray];
+    NSLog(@"%@",testArray[0]);
+    
+    
 }
+
 
 
 - (void)didReceiveMemoryWarning
