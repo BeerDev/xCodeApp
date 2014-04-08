@@ -28,7 +28,7 @@
     dataholding = [DataHolder alloc];
     [dataholding jsonData];
     
-    //HEJ HEJ HEJ 
+    //HEJ HEJ HEJ
       //  [_test setImage:[dataholding cacheThoseImages]];
    // bild = [UIImage imageNamed:@"test.png"];
 	// Do any additional setup after loading the view, typically from a nib.
