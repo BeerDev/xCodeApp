@@ -8,7 +8,14 @@
 
 #import "ViewController.h"
 
+<<<<<<< HEAD
 @interface ViewController ()
+=======
+@interface ViewController (){
+    //declare variables here to be global thru this class
+    
+}
+>>>>>>> FETCH_HEAD
 
 @end
 
@@ -17,6 +24,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+<<<<<<< HEAD
     NSLog(@"did the application load?!");
 
 	// Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +32,14 @@
 - (IBAction)push:(id)sender {
     _testField.text = @"you pushed the button";
 }
+=======
+    NSArray * testArray = [jsonData GetArray];
+    NSLog(@"%@",testArray[0]);
+    
+    
+}
+
+>>>>>>> FETCH_HEAD
 
 - (void)didReceiveMemoryWarning
 {
