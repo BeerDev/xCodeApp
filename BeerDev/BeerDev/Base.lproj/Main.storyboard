@@ -24,6 +24,32 @@
             </objects>
             <point key="canvasLocation" x="-187" y="8"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="zy0-3m-lsW">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="DiV-KX-IMz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Co8-Ya-HhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="-372"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="yaF-r4-KFZ">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="FCD-GJ-ULf" customClass="PageContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YiB-Tj-CVA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bfw-q6-QjC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BJP-h3-zr8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Np-aP-mgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="310"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

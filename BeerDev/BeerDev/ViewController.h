@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "jsonData.h"
+#import "PageContentViewController.h"
 
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIPageViewControllerDataSource>
+
+@property (strong, nonatomic) UIPageViewController *pageViewController;
 
 @end
