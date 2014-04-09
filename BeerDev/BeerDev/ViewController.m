@@ -8,14 +8,7 @@
 
 #import "ViewController.h"
 
-<<<<<<< HEAD
 @interface ViewController ()
-=======
-@interface ViewController (){
-    //declare variables here to be global thru this class
-    
-}
->>>>>>> FETCH_HEAD
 
 @end
 
@@ -26,11 +19,15 @@
 {
     [super viewDidLoad];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> FETCH_HEAD
     NSLog(@"did the application load?!");
 
 	// Do any additional setup after loading the view, typically from a nib.
 }
+<<<<<<< HEAD
 - (IBAction)push:(id)sender {
     _testField.text = @"you pushed the button";
 }
@@ -61,6 +58,8 @@
 }
 
 <<<<<<< HEAD
+=======
+>>>>>>> FETCH_HEAD
 
 =======
 >>>>>>> MyTestBrach

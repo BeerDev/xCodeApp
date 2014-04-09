@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 #import "jsonData.h"
 #import "PageContentViewController.h"
 
+=======
+>>>>>>> FETCH_HEAD
 
 @interface ViewController : UIViewController <UIPageViewControllerDataSource>
 
