@@ -12,6 +12,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+<<<<<<< HEAD
+=======
+
+    if([jsonData GetJsonArray:@"JSON"] == 0){
+        NSLog(@"not in memory");
+        [jsonData SetJSON];
+    }else{
+         NSLog(@"already in memory");
+        [jsonData SetArrayWithoutInternet:[jsonData GetJsonArray:@"JSON"]] ;
+    }
+
+>>>>>>> origin/MyTestBrach
     // Override point for customization after application launch.
     return YES;
 }
