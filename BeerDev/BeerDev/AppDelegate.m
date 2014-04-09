@@ -13,7 +13,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> FETCH_HEAD
 
     if([jsonData GetJsonArray:@"JSON"] == 0){
         NSLog(@"not in memory");
@@ -23,7 +26,12 @@
         [jsonData SetArrayWithoutInternet:[jsonData GetJsonArray:@"JSON"]] ;
     }
 
+<<<<<<< HEAD
 >>>>>>> origin/MyTestBrach
+=======
+=======
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
     // Override point for customization after application launch.
     return YES;
 }

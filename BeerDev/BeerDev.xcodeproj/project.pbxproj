@@ -26,7 +26,11 @@
 		C968218F18F5292600C0ADFD /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C968218E18F5292600C0ADFD /* PageContentViewController.m */; };
 		C968219218F53AB200C0ADFD /* ViewInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C968219118F53AB200C0ADFD /* ViewInformationController.m */; };
 		C9ED1A4518F43CE500842719 /* jsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ED1A4418F43CE500842719 /* jsonData.m */; };
+<<<<<<< HEAD
 >>>>>>> origin/MyTestBrach
+=======
+>>>>>>> MyTestBrach
+>>>>>>> FETCH_HEAD
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +72,11 @@
 		C968219118F53AB200C0ADFD /* ViewInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewInformationController.m; sourceTree = "<group>"; };
 		C9ED1A4318F43CE500842719 /* jsonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonData.h; sourceTree = "<group>"; };
 		C9ED1A4418F43CE500842719 /* jsonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonData.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 >>>>>>> origin/MyTestBrach
+=======
+>>>>>>> MyTestBrach
+>>>>>>> FETCH_HEAD
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +198,11 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 >>>>>>> origin/MyTestBrach
+=======
+>>>>>>> MyTestBrach
+>>>>>>> FETCH_HEAD
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,7 +306,11 @@
 				C968219218F53AB200C0ADFD /* ViewInformationController.m in Sources */,
 				C9ED1A4518F43CE500842719 /* jsonData.m in Sources */,
 				C968218F18F5292600C0ADFD /* PageContentViewController.m in Sources */,
+<<<<<<< HEAD
 >>>>>>> origin/MyTestBrach
+=======
+>>>>>>> MyTestBrach
+>>>>>>> FETCH_HEAD
 				C93AED9818E5A88F003F5A5A /* AppDelegate.m in Sources */,
 				C93AED9418E5A88F003F5A5A /* main.m in Sources */,
 			);

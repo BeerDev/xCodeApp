@@ -19,9 +19,24 @@
 {
     [super viewDidLoad];
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
     NSLog(@"did the application load?!");
 
 	// Do any additional setup after loading the view, typically from a nib.
+}
+<<<<<<< HEAD
+- (IBAction)push:(id)sender {
+    _testField.text = @"you pushed the button";
+}
+
+    NSArray * testArray = [jsonData GetArray];
+    NSLog(@"%@",testArray[0]);
 =======
     //set backgroundcolor
     self.view.backgroundColor = [UIColor whiteColor];
@@ -29,6 +44,7 @@
     // Create PageViewController
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
+>>>>>>> MyTestBrach
     
     //Start the page view controller with this first page at index 0;
     PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
@@ -42,9 +58,18 @@
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
     [self.pageViewController didMoveToParentViewController:self];
+<<<<<<< HEAD
 >>>>>>> origin/MyTestBrach
+=======
+>>>>>>> FETCH_HEAD
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> FETCH_HEAD
+
+=======
+>>>>>>> MyTestBrach
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

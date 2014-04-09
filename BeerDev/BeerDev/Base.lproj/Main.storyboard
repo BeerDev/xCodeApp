@@ -127,7 +127,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUg-lR-W2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="635" y="333"/>
+<<<<<<< HEAD
 >>>>>>> origin/MyTestBrach
+=======
+>>>>>>> MyTestBrach
+>>>>>>> FETCH_HEAD
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
