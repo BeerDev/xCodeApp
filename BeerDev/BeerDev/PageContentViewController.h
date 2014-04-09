@@ -8,17 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "jsonData.h"
+#import "PageContentViewController.h"
 
 @interface PageContentViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *ImageBottle;
-@property (weak, nonatomic) IBOutlet UILabel *aLabel;
-
-
-@property (nonatomic, strong) UIImage * bilden;
+@property (strong, nonatomic) UIViewController * PageContentViewController;
+@property (weak, nonatomic) IBOutlet UIImageView *displayImage;
+@property (weak, nonatomic) IBOutlet UILabel *artikelnamnLabel;
 @property NSUInteger pageIndex;
-@property NSString *titleText;
 
+
+//connection functions from NSURLConnection. 
 @property (nonatomic,retain) NSMutableArray* jsonObjects;
 @property (nonatomic, copy) void (^completionHandler)(void);
 @property (nonatomic, strong) NSMutableData *activeDownload;

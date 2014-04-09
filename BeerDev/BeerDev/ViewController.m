@@ -17,30 +17,25 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //
-    NSArray * testArray = [jsonData GetArray];
-    NSLog(@"%@",testArray[0]);
-    
+    //set backgroundcolor
     self.view.backgroundColor = [UIColor whiteColor];
     
-    // Create page view controller
+    // Create PageViewController
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
     
-    //start the page view controller with this first page at index 0;
+    //Start the page view controller with this first page at index 0;
     PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
-    
     NSArray *viewControllers = @[startingViewController];
     
-    
+    //set the PageViewController by storyboard ID. 
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
-    
-    // Change the size of page view controller
+    // Change the size of page view controller if needed.
     self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
@@ -53,18 +48,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)swipeDown:(id)sender {
+    
+    NSLog(@"hej du har swipat uppåt");
+}
+
 #pragma mark PageViewController 
 - (PageContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
     if (([[jsonData GetArray] count]-1 == 0) ||( index >= [[jsonData GetArray] count]-1)) {
         return nil;
     }
-    
     // Create a new view controller and pass suitable data.
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
     
     // [jsonData startDownload:(int)index];
-    //pageContentViewController.titleText = self.pageTitles[index];
     pageContentViewController.pageIndex = index;
     
     
@@ -99,7 +97,7 @@
 }
 
 
-
+/*
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
     return [[jsonData GetArray] count]-1;
@@ -109,6 +107,6 @@
 {
     return 0;
 }
-
+*/
 
 @end

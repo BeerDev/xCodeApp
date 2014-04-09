@@ -26,24 +26,19 @@
     }
     return self;
 }
-- (IBAction)ifSwipe:(id)sender {
-    NSLog(@"hello you swiped up, we will use this function later for adding a subview with information");
-    
-}
 
 - (void)viewDidLoad
 {
 
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
-   
-    NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://beerdev.tk/json_products.php"]];
-    _jsonObjects = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
     
+    JsonDataArray = [jsonData GetArray];
+
     // Do any additional setup after loading the view.
     //  self.ImageBottle.image = self.bilden;
     
-    self.aLabel.text = _titleText;
+    self.artikelnamnLabel.text = [JsonDataArray[_pageIndex] objectForKey:@"Artikelnamn"];
     [self startDownload:(int)_pageIndex];
 }
 
@@ -59,7 +54,7 @@
 - (void)startDownload:(int)index{
     self.activeDownload = [NSMutableData data];
    // NSLog(@"%@",[_jsonObjects[index] objectForKey:(NSString*)@"URL"]);
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[_jsonObjects[index] objectForKey:(NSString*)@"URL"]]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[JsonDataArray[index] objectForKey:(NSString*)@"URL"]]];
     
     // alloc+init and start an NSURLConnection; release on completion/failure
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
@@ -88,14 +83,11 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-        // Add code here to update the UI/send notifications based on the
-        // results of the background processing
-  
     // Set appIcon and clear temporary data/image
     UIImage *image = [[UIImage alloc] initWithData:self.activeDownload];
     NSLog(@"finsihed");
     
-    self.ImageBottle.image = image;
+    self.displayImage.image = image;
     self.activeDownload = nil;
     
     // Release the connection now that it's finished
@@ -107,6 +99,10 @@
 
 }
 
+#pragma mark - Gesture Recognizer functions
+- (IBAction)SetInformationView:(id)sender {
+    NSLog(@"adding informationView");
+}
 
 /*
 #pragma mark - Navigation

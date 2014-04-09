@@ -22,6 +22,7 @@
 		C93AEDB118E5A890003F5A5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C93AEDAF18E5A890003F5A5A /* InfoPlist.strings */; };
 		C93AEDB318E5A890003F5A5A /* BeerDevTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C93AEDB218E5A890003F5A5A /* BeerDevTests.m */; };
 		C968218F18F5292600C0ADFD /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C968218E18F5292600C0ADFD /* PageContentViewController.m */; };
+		C968219218F53AB200C0ADFD /* ViewInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C968219118F53AB200C0ADFD /* ViewInformationController.m */; };
 		C9ED1A4518F43CE500842719 /* jsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ED1A4418F43CE500842719 /* jsonData.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		C941123D18F2BA6B00091BA9 /* constans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constans.h; sourceTree = "<group>"; };
 		C968218D18F5292600C0ADFD /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		C968218E18F5292600C0ADFD /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		C968219018F53AB200C0ADFD /* ViewInformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewInformationController.h; sourceTree = "<group>"; };
+		C968219118F53AB200C0ADFD /* ViewInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewInformationController.m; sourceTree = "<group>"; };
 		C9ED1A4318F43CE500842719 /* jsonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonData.h; sourceTree = "<group>"; };
 		C9ED1A4418F43CE500842719 /* jsonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +179,8 @@
 			children = (
 				C968218D18F5292600C0ADFD /* PageContentViewController.h */,
 				C968218E18F5292600C0ADFD /* PageContentViewController.m */,
+				C968219018F53AB200C0ADFD /* ViewInformationController.h */,
+				C968219118F53AB200C0ADFD /* ViewInformationController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93AED9E18E5A88F003F5A5A /* ViewController.m in Sources */,
+				C968219218F53AB200C0ADFD /* ViewInformationController.m in Sources */,
 				C9ED1A4518F43CE500842719 /* jsonData.m in Sources */,
 				C968218F18F5292600C0ADFD /* PageContentViewController.m in Sources */,
 				C93AED9818E5A88F003F5A5A /* AppDelegate.m in Sources */,
