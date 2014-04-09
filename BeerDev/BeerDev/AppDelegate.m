@@ -22,13 +22,7 @@
          NSLog(@"already in memory");
         [jsonData SetArrayWithoutInternet:[jsonData GetJsonArray:@"JSON"]] ;
     }
-    
- 
-    
-    //NSLog(@"%@",[jsonData GetArray]);
-    
-    
-    
+
     // Override point for customization after application launch.
     return YES;
 }
