@@ -10,25 +10,8 @@
 
 @implementation AppDelegate
 
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
-    if([jsonData GetJsonArray:@"JSON"] == 0){
-        NSLog(@"not in memory");
-        [jsonData SetJSON];
-    }else{
-         NSLog(@"already in memory");
-        [jsonData SetArrayWithoutInternet:[jsonData GetJsonArray:@"JSON"]] ;
-    }
-    
- 
-    
-    //NSLog(@"%@",[jsonData GetArray]);
-    
-    
-    
     // Override point for customization after application launch.
     return YES;
 }
@@ -41,8 +24,6 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    NSLog(@"entering background");
-     [jsonData SetArrayForKey:[jsonData GetArray] forKey:@"JSON"];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
@@ -59,7 +40,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-   
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
