@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DataHolder.h"
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *testKnapp;
-@property (weak, nonatomic) IBOutlet UITextField *testField;
 
 @end
